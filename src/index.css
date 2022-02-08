@@ -37,6 +37,7 @@ button {
 }
 button:hover {
   cursor: pointer;
+  border:4px solid rgb(245, 117, 252);
 }
 .unsplash-pictures {
   display: flex;
@@ -51,13 +52,16 @@ button:hover {
 .image {
   padding: 5px;
 }
+.image:hover {
+  transform: scale(1.05);
+}
 .header {
   font-size: 50px;
-  text-align: center;
 }
 .black-background {
   background-color: black;
   color: white;
+  text-align: center;
 }
 .explore:hover {
  color: rgb(245, 117, 252);
@@ -66,5 +70,12 @@ button:hover {
   color: rgb(251, 255, 26);
 }
 .inspire:hover {
+  color: rgb(15, 207, 250);
+}
+.footer {
+padding: 50px 0 10px;
+}
+a {
+  text-decoration: none;
   color: rgb(15, 207, 250);
 }
