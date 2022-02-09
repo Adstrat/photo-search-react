@@ -33,18 +33,16 @@ const Search = () => {
 
   // initial photo selection 
   useEffect( () => {
-    if ( pics.length < 1 ) {
-      axios
-        .get( `https://api.unsplash.com/photos?client_id=${ client_id }` )
-        .then( response => {
-          // this.setState({ imgs: data.data });
-          console.log( response );
-          setInitialPics( response.data );
-        } )
-        .catch( err => {
-          console.log( 'Error happened during fetching!', err );
-        } );
-    }
+    axios
+      .get( `https://api.unsplash.com/photos?client_id=${ client_id }` )
+      .then( response => {
+        // this.setState({ imgs: data.data });
+        console.log( response );
+        setInitialPics( response.data );
+      } )
+      .catch( err => {
+        console.log( 'Error happened during fetching!', err );
+      } );
   }, [] );
 
   return (
