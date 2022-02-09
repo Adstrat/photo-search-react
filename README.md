@@ -1,7 +1,10 @@
 # Photo Search React
 
-A React app to search for photos from the [Unsplash API](https://unsplash.com/developers).
+A React app using the [Unsplash API](https://unsplash.com/developers) to search for photos.
 
+View the [Live version](https://adstrat.github.io/photo-search-react/) of this app.
+
+[<img src="assets/photo-search-app.png">](https://adstrat.github.io/photo-search-react/)
 
 ## Quick Start
 ### Install Dependencies
