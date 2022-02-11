@@ -23,6 +23,7 @@ const InitialView = ( { initialPics } ) => {
                 src={initialPic.urls.regular}
                 height="300px">
               </img>
+              <h4 className="card-text">{initialPic.user.name}</h4>
             </div>
           ) )}
         </div>

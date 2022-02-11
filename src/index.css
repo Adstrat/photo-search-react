@@ -47,13 +47,6 @@ button:hover {
 .border {
   border: 1px solid #2e87ba;
   padding: 20px;
-
-}
-.image {
-  padding: 5px;
-}
-.image:hover {
-  transform: scale(1.05);
 }
 .header {
   font-size: 50px;
@@ -79,10 +72,38 @@ a {
   text-decoration: none;
   color: rgb(15, 207, 250);
 }
+.card-image {
+  padding: 5px;
+  position: relative;
+}
+ .card-text {
+  position: absolute;
+  margin: 0;
+  top: 14px;
+  left: 16px;
+  color: black;
+  background-color: white;
+  padding: 3px 6px;
+  visibility: hidden;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+.image:hover {
+  transform: scale(1.05);
+}
+.card-image:hover + .card-text {
+  visibility: visible;
+}
 
 @media all and (max-width: 900px){
   .image > img {
     height: 200px;
+  }
+  .card-text {
+    top: 6px;
+    left: 6px;
+    max-width: 70%;
+    font-size: small;
   }
 }
 @media all and (max-width: 650px){
@@ -96,5 +117,8 @@ a {
   }
   .navbar {
     height: 140px;
+  }
+  .search-bar input {
+    padding-left: 10px;
   }
 }

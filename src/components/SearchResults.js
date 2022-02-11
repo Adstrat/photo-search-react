@@ -18,6 +18,7 @@ const SearchResults = ( { pics } ) => {
                 src={pic.urls.regular}
                 height="200px">
               </img>
+              <h4 className="card-text">{pic.user.name}</h4>
             </div>
           ) )}
         </div>
